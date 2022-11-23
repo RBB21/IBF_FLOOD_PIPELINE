@@ -88,9 +88,9 @@ def main():
                 logger.info('--------Finished flood extent')
                 fc.exposure.callAllExposure()
                 logger.info('--------Finished exposure')
-                fc.db.upload()
+                #fc.db.upload()
                 logger.info('--------Finished upload')
-                fc.db.sendNotification()
+                #fc.db.sendNotification()
                 logger.info('--------Finished notification')
     except Exception as e:
         logger.error("Flood Data PIPELINE ERROR")
